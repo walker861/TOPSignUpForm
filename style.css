@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('/Norse-Bold.otf');
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+main {
+  display: flex;
+  background-color: rgb(235, 235, 235);
+}
+
+figure > img {
+  height: 100vh;
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 8px;
+}
+
+figcaption a {
+  color: rgb(255, 255, 255);
+}
+
+.odin > img {
+  width: 15%;
+}
+
+.odin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 25%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  font-family: 'Norse Bold';
+  font-size: 42px;
+}
+
+.content p,
+.form {
+  padding: 15px 25px;
+}
+
+.form {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form input {
+  font-size: 10px;
+  padding: 4px;
+}
+form {
+  display: flex;
+  flex-flow: column wrap;
+  width: 400px;
+}
+
+label {
+  display: block;
+  width: 150px;
+}
+
+input {
+  width: 250px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1 {
+  width: 50%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+input {
+  width: 150px;
+  margin: 3px 0 6px;
+  border: solid 1px rgb(229, 231, 235);
+  border-radius: 2px;
+}
+
+input:invalid {
+  border: solid 1px rgb(200, 0, 0);
+}
+
+button {
+  padding: 0.25rem 0.75rem;
+
+  width: 25%;
+  background-color: rgb(89, 109, 72);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  margin: 15px 25px;
+}
+
+button:hover {
+  border: solid 1px rgb(89, 109, 72);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(89, 80, 72);
+}
+
+.error {
+  display: block;
+  font-size: x-small;
+  color: rgb(200, 0, 0);
+}
+
+.success {
+  display: block;
+  font-size: small;
+  font-weight: bold;
+  color: blue;
+}
