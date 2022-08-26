@@ -17,7 +17,7 @@ function validatePassword() {
       error.textContent = '';
     } else if (password1.length < 8) {
       console.log('Too short!');
-      error.textContent = 'Password is TOO SHORT!';
+      error.textContent = 'Passwords need 8 characters';
       success.textContent = '';
     } else {
       console.log('Passwords do not match!');
